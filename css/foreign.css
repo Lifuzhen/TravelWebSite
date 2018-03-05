@@ -1,0 +1,155 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    line-height: 1.5em;
+    font-family: KaiTi;
+    color: #666;
+    background: rgba(240,240,240, .6);
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: #726f6f;
+}
+a:hover{
+    color: #00f;
+    text-decoration:none;
+    cursor: pointer;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+#top,#main,#footer-box,#footer-container,#footer{
+    width: 1260px;
+    margin:0 auto;
+}
+
+/**导航栏的设置*/
+#top{
+    height: 50px;
+}
+#user-prefs{
+    float: left;
+    background: rgba(255,255,255,1);
+    line-height: 50px;
+    /*border-bottom: 1px solid #DDDDDD;*/
+    width: inherit;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    /*position: absolute;*/
+    top:0;
+}
+/*logo*/
+#user-prefs img{
+    float: left;
+    width: 60px;
+    height: 28px;
+    margin-top: 13px;
+}
+#user-prefs>ul>li{
+    float: left;
+    height: 30px;
+    margin-right: 13px;
+}
+#user-prefs a:hover p.lf{
+    color: #669D53;
+}
+#user-prefs ul{
+    font-size: 20px;
+}
+#user-prefs ul.rt li.active a{
+    color: #f00;
+}
+#user-prefs ul li>i{
+    width: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ccc transparent transparent transparent;
+    line-height: 30px;
+    position: relative;
+    top: -15px;
+    right: -45px;
+}
+#user-prefs>ul>li>b{
+    border-left: 1px solid #ddd;
+    margin:  0 9px;
+}
+#user-prefs ul li.about{
+    width: 120px;
+}
+#user-prefs li.service{
+    position: relative;
+}
+#user-prefs #welcome a{
+    font-size: 20px;
+    color: #000000;
+}
+#user-prefs #welcome a:hover{
+    color: #e4393c;
+    text-decoration: none;
+}
+#user-prefs li.service>a{
+    padding: 0 15px;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background:url(../img/service_down.jpg) #fff no-repeat 96% center;
+}
+#service-items{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-top: none;
+    width: 103px;
+    text-align: center;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    display: none;
+    z-index: 20;
+    font-size: 20px;
+    line-height: 30px;
+}
+li.service:hover #service-items{
+    display: block;
+}
+
+#user-prefs li.service:hover>a{
+    background:url(../img/service_up.jpg) #fff no-repeat 96% center;
+}
+#about{
+    display:none;
+    position:relative;
+    left: 14px;
+    top:0px;
+    z-index:100;
+    width: 130px;
+    height:195px;
+    padding: 0px 0 0px 10px;
+    border:1px solid #DDD;
+    box-shadow:0 0 10px #DDD;
+}
+#about div.lfzwebChat,#about div.lklwebChat {
+    height:95px;
+    padding-left:100px;
+}
+#about div.lfzwebChat {
+    background:url(../img/lfz.png) 15px center no-repeat;
+}
+#about div.lklwebChat {
+    background:url(../img/lkl.jpg) 15px center no-repeat;
+}
+li.about:hover #about{
+    display: block;
+}
+
+#user-prefs>p{
+    color: #669D53;
+}
