@@ -24,7 +24,7 @@ a:hover{
 .lf{float:left;}
 .rt{float:right;}
 .clear{clear:both;}
-#top,#main,#footer-box,#footer-container,#footer{
+#top,#foreign-nav,#asia,#america,#europe,#south_pacific{
     width: 1260px;
     margin:0 auto;
 }
@@ -149,7 +149,32 @@ li.service:hover #service-items{
 li.about:hover #about{
     display: block;
 }
-
 #user-prefs>p{
     color: #669D53;
 }
+
+
+/*锚点*/
+#foreign-nav{
+    margin-top: 10px;
+    /*width: 100%;*/
+    height: 40px;
+    background: #fff;
+    box-shadow: 10px;
+    box-shadow: 5px 5px 10px #888;
+}
+#foreign-nav ul.foreignTab{
+    /*width: 1260px;*/
+    /*margin:  auto;*/
+    box-shadow: 5px 5px 10px #888;
+}
+#foreign-nav ul.foreignTab li{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+
