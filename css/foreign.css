@@ -154,19 +154,19 @@ li.about:hover #about{
 }
 
 
+/*国外游*/
 /*锚点*/
 #foreign-nav{
     margin-top: 10px;
-    /*width: 100%;*/
+    background: #45c228;
     height: 40px;
-    background: #fff;
     box-shadow: 10px;
     box-shadow: 5px 5px 10px #888;
 }
 #foreign-nav ul.foreignTab{
-    /*width: 1260px;*/
-    /*margin:  auto;*/
-    box-shadow: 5px 5px 10px #888;
+    margin: 0 auto;
+    height: 40px;
+    width: 400px;
 }
 #foreign-nav ul.foreignTab li{
     float: left;
@@ -175,6 +175,114 @@ li.about:hover #about{
     line-height: 40px;
     font-size: 20px;
 }
+
+/*解决浮动元素对父元素带来的影响*/
+#asia ul.asia-ul:after,
+#america ul.america-ul:after,
+#europe ul.europe-ul:after,
+#south_pacific ul.south_pacific-ul:after
+{
+    content:"";
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+#asia ul.asia-ul li,
+#america ul.america-ul li,
+#europe ul.europe-ul li,
+#south_pacific ul.south_pacific-ul li
+{
+    float: left;
+    width: 270px;
+    height: 345px;
+    border-bottom: 1px solid #cbcbcb;
+    background: #fff;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#asia ul.asia-ul li a:hover,
+#america ul.america-ul li a:hover,
+#europe ul.europe-ul li a:hover,
+#south_pacific ul.south_pacific-ul li a:hover {
+    color: #000;
+}
+#asia ul.asia-ul li div.img img,
+#america ul.america-ul li div.img img,
+#europe ul.europe-ul li div.img img,
+#south_pacific ul.south_pacific-ul li div.img img {
+    background: #ccc;
+    width: 270px;
+    height: 185px;
+    overflow: hidden;
+}
+#asia ul.asia-ul li div.title,
+#america ul.america-ul li div.title,
+#europe ul.europe-ul li div.title,
+#south_pacific ul.south_pacific-ul li div.title {
+    font-size: 18px;
+    margin:7px 20px 10px 20px;
+}
+#asia ul.asia-ul li div.site,
+#america ul.america-ul li div.site,
+#europe ul.europe-ul li div.site,
+#south_pacific ul.south_pacific-ul li div.site {
+    margin: 0 20px;
+}
+#asia ul.asia-ul li div.description,
+#america ul.america-ul li div.description,
+#europe ul.europe-ul li div.description,
+#south_pacific ul.south_pacific-ul li div.description {
+    margin: 7px 20px 10px 20px;
+}
+
+/*返回页面顶端的button*/
+#tooltip{
+    display: none;
+}
+#tooltip button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+
+/*页面底部-备案号等*/
+#footer{
+    text-align:center;
+    padding-top: 30px;
+    font-family: SimHei;
+}
+#footer i{
+    border-left:1px solid #CABBA9;
+    margin:8px;
+}
+#footer img{
+    margin:20px;
+}
+#footer-box a,#footer a{
+    color: #000000;
+}
+
+/*layer弹框*/
+
+.layui-layer-page .layui-layer-content div.layer-content{
+    margin: 0 20px;
+}
+.layui-layer-page .layui-layer-content div.img img{
+    width:100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.layui-layer-page .layui-layer-content div.layer-content div.content{
+    margin-top: 10px;
+}
+
+
+
 
 
 

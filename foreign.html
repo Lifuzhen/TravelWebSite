@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>国外游</title>
     <link rel="stylesheet" href="css/foreign.css">
+    <link rel="stylesheet" href="font/iconfont.css">
 </head>
 <body>
 <!--头部-->
@@ -62,6 +63,7 @@
         </ul>
     </div>
 </div>
+<!--锚点-->
 <div id="foreign-nav">
     <ul class="foreignTab">
         <li>
@@ -78,14 +80,835 @@
         </li>
     </ul>
 </div>
-
-<div id="asia" style="padding: 200px 0">亚洲</div>
-<div id="america" style="padding: 200px 0">美洲</div>
-<div id="europe" style="padding: 200px 0">欧洲</div>
-<div id="south_pacific" style="padding: 200px 0">大洋洲</div>
-
-
+<!--内容-->
+<div id="asia">
+    <ul class="asia-ul">
+        <li>
+            <a onclick="changeModal('asia01')">
+                <div class="img">
+                    <img src="img/foreign/asia/印尼玛琅.jpg">
+                </div>
+                <div class="title">印尼玛琅</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>爪哇岛东部</div>
+                <div class="description">位于爪哇岛东部，离泗水约100公里。玛琅大城曾是荷兰殖民地和古马塔兰所在地......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia02')">
+                <div class="img">
+                    <img src="img/foreign/asia/日本那霸.jpg">
+                </div>
+                <div class="title">日本那霸</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>冲绳县</div>
+                <div class="description">冲绳素有日本夏威夷的美称，气候温暖宜人，沙白浪缓......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia03')">
+                <div class="img">
+                    <img src="img/foreign/asia/泰国卡农.jpg">
+                </div>
+                <div class="title">泰国卡农</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>国湾西岸，洛坤府北部</div>
+                <div class="description">卡农相当低调，常常被前往苏梅岛、帕岸岛的旅客所忽略......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia04')">
+                <div class="img">
+                    <img src="img/foreign/asia/泰国碧差汶.jpg">
+                </div>
+                <div class="title">泰国碧差汶</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>曼谷出发，一路北行</div>
+                <div class="description">田园诗般的风景让人深刻体会到返璞归真的美......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia05')">
+                <div class="img">
+                    <img src="img/foreign/asia/菲律宾大雁塔.jpg">
+                </div>
+                <div class="title">菲律宾大雁塔</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>甲美地省高地</div>
+                <div class="description">鬼斧神工的大自然还赋予了大雁塔一个塔尔湖——塔尔火山口附近的火山湖......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia06')">
+                <div class="img">
+                    <img src="img/foreign/asia/菲律宾巴拉望.jpg">
+                </div>
+                <div class="title">菲律宾巴拉望</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>菲律宾的西南部</div>
+                <div class="description">是一个典型的热带海岛，岛上有国家公园、天然港湾......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia07')">
+                <div class="img">
+                    <img src="img/foreign/asia/越南美奈.jpg">
+                </div>
+                <div class="title">越南美奈</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>离胡志明市仅5小时车程</div>
+                <div class="description">美奈是一个坐拥大片沙滩的宁静渔村......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('asia08')">
+                <div class="img">
+                    <img src="img/foreign/asia/韩国釜山.jpg">
+                </div>
+                <div class="title">韩国釜山</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>韩国东南海岸</div>
+                <div class="description">釜山是韩国人口第二多的城市，同时也全国最大的港口城市......</div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="america">
+   <ul class="america-ul">
+       <li>
+           <a onclick="changeModal('america01')">
+               <div class="img">
+                   <img src="img/foreign/america/伊瓜苏国家公园.jpg">
+               </div>
+               <div class="title">伊瓜苏国家公园</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>玄武岩地带</div>
+               <div class="description">被誉为“南美第一奇观”的伊瓜苏瀑布是南美洲最大的瀑布，也是世界五大名瀑之一......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america02')">
+               <div class="img">
+                   <img src="img/foreign/america/圣克拉拉.jpg">
+               </div>
+               <div class="title">圣克拉拉</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>维利亚克拉拉省的省会</div>
+               <div class="description">那里有现代化的设施和舒适的服务，其中有温泉浴、泥潭疗养浴和按摩治疗......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america03')">
+               <div class="img">
+                   <img src="img/foreign/america/德雷克海峡.jpg">
+               </div>
+               <div class="title">德雷克海峡</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>南美洲最南端</div>
+               <div class="description">德雷克海峡是沟通太平洋和大西洋的重要海上通道之一......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america04')">
+               <div class="img">
+                   <img src="img/foreign/america/沃特顿冰川国际和平公园.jpg">
+               </div>
+               <div class="title">沃特顿冰川国际和平公园</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>南美洲最南端</div>
+               <div class="description">亚伯达州的沃特顿湖区......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america05')">
+               <div class="img">
+                   <img src="img/foreign/america/特里尼达.jpg">
+               </div>
+               <div class="title">特里尼达</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>特里尼达城镇</div>
+               <div class="description">1988年联合国教科文组织宣布古老的特里尼达为人类文化遗产......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america06')">
+               <div class="img">
+                   <img src="img/foreign/america/自由女神像.jpg">
+               </div>
+               <div class="title">自由女神像</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>美国纽约州纽约市附近的自由岛</div>
+               <div class="description">正式名称是“照耀世界的自由女神”......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america07')">
+               <div class="img">
+                   <img src="img/foreign/america/门多萨.jpg">
+               </div>
+               <div class="title">门多萨</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>阿根廷中西部</div>
+               <div class="description">门多萨的冬季显得温和而湿润......</div>
+           </a>
+       </li>
+       <li>
+           <a onclick="changeModal('america08')">
+               <div class="img">
+                   <img src="img/foreign/america/黄石国家公园.jpg">
+               </div>
+               <div class="title">黄石国家公园</div>
+               <div class="site"><i class="iconfont icon-dangdi"></i>怀俄明州西北部</div>
+               <div class="description">是美国第一个国家公园和原始公园......</div>
+           </a>
+       </li>
+   </ul>
+</div>
+<div id="europe">
+    <ul class="europe-ul">
+        <li>
+            <a onclick="changeModal('europe01')">
+                <div class="img">
+                    <img src="img/foreign/europe/伦敦塔桥.jpg">
+                </div>
+                <div class="title">伦敦塔桥</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>英国伦敦泰晤士</div>
+                <div class="description">伦敦塔桥是从英国伦敦泰晤士河口算起的第一座桥......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe02')">
+                <div class="img">
+                    <img src="img/foreign/europe/克利姆林宫.jpg">
+                </div>
+                <div class="title">克利姆林宫</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>俄罗斯</div>
+                <div class="description">世界上最大的建筑群之一......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe03')">
+                <div class="img">
+                    <img src="img/foreign/europe/凯旋门.jpg">
+                </div>
+                <div class="title">凯旋门</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>巴黎</div>
+                <div class="description">欧洲100多座凯旋门中最大的一座......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe04')">
+                <div class="img">
+                    <img src="img/foreign/europe/卢浮宫.jpg">
+                </div>
+                <div class="title">卢浮宫</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>法国巴黎</div>
+                <div class="description">卢浮宫 是世界上最古老、最大、最著名的博物馆......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe05')">
+                <div class="img">
+                    <img src="img/foreign/europe/埃菲尔铁塔.jpg">
+                </div>
+                <div class="title">埃菲尔铁塔</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>法国巴黎</div>
+                <div class="description">法国巴黎的重要景点和突出标志......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe06')">
+                <div class="img">
+                    <img src="img/foreign/europe/大英博物馆.jpg">
+                </div>
+                <div class="title">大英博物馆</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>******</div>
+                <div class="description">大英博物馆是世界上历史最悠久、规模最宏伟的综合性博物馆......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe07')">
+                <div class="img">
+                    <img src="img/foreign/europe/威尼斯水城.jpg">
+                </div>
+                <div class="title">威尼斯水城</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>******</div>
+                <div class="description">威尼斯水上城市是文艺复兴的精华......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe08')">
+                <div class="img">
+                    <img src="img/foreign/europe/巴黎圣母院.jpg">
+                </div>
+                <div class="title">巴黎圣母院</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>法国巴黎市中心</div>
+                <div class="description">天主教巴黎总教区的主教座堂......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe09')">
+                <div class="img">
+                    <img src="img/foreign/europe/尼斯湖.jpg">
+                </div>
+                <div class="title">尼斯湖</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>英国苏格兰高原北部</div>
+                <div class="description">传说这儿住着一只水怪......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe10')">
+                <div class="img">
+                    <img src="img/foreign/europe/帕特农神庙.jpg">
+                </div>
+                <div class="title">帕特农神庙</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>希腊首都雅典卫城坐落的古城堡中心</div>
+                <div class="description">历经两千多年的沧桑之变......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe11')">
+                <div class="img">
+                    <img src="img/foreign/europe/普罗旺斯.jpg">
+                </div>
+                <div class="title">普罗旺斯</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>******</div>
+                <div class="description">普罗旺斯是世界闻名的薰衣草故乡......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('europe12')">
+                <div class="img">
+                    <img src="img/foreign/europe/罗马竞技场.jpg">
+                </div>
+                <div class="title">罗马竞技场</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>意大利</div>
+                <div class="description">意大利古罗马竞技场罗马斗兽场是古罗马帝国专供奴隶主......</div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="south_pacific">
+    <ul class="south_pacific-ul">
+        <li>
+            <a onclick="changeModal('south_pacific01')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/十二使徒岩.jpg">
+                </div>
+                <div class="title">十二使徒岩</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>澳大利亚维多利亚州的大洋路边上</div>
+                <div class="description">坎贝尔港国家公园之中，屹立在海岸旁已有二千万年历史了......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific02')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/大堡瞧.jpg">
+                </div>
+                <div class="title">大堡瞧</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>南半球</div>
+                <div class="description">世界最大最长的珊瑚礁群......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific03')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/大洋路.jpg">
+                </div>
+                <div class="title">大洋路</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>墨尔本西部</div>
+                <div class="description">为纪念参加第一次世界大战的士兵修建......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific04')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/悉尼大学.jpg">
+                </div>
+                <div class="title">悉尼大学</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>澳洲金融之都悉尼市中心</div>
+                <div class="description">世界顶尖历史名校......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific05')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/悉尼歌剧院.jpg">
+                </div>
+                <div class="title">悉尼歌剧院</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>悉尼市区北部</div>
+                <div class="description">悉尼市地标建筑物......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific06')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/牛奶湖.jpg">
+                </div>
+                <div class="title">牛奶湖</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>帕劳颇</div>
+                <div class="description">牛奶湖是帕劳颇具特色的旅游胜地......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific07')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/菲利普岛.png">
+                </div>
+                <div class="title">菲利普岛</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>澳大利亚维多利亚州南部西港海湾口</div>
+                <div class="description">菲利普岛又称企鹅岛......</div>
+            </a>
+        </li>
+        <li>
+            <a onclick="changeModal('south_pacific08')">
+                <div class="img">
+                    <img src="img/foreign/south_pacific/达令港.jpg">
+                </div>
+                <div class="title">达令港</div>
+                <div class="site"><i class="iconfont icon-dangdi"></i>悉尼市中心的西北部</div>
+                <div class="description">达令港又译情人港......</div>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--返回页面顶端-->
+<div id="tooltip">
+    <button class="toTop">置顶</button>
+</div>
+<!--尾部-->
+<footer id="footer">
+    <p>
+        <a href="#">关于我们</a>
+        <i></i>
+        <a href="#">联系我们</a>
+        <i></i>
+        <a href="#">人才招聘</a>
+        <i></i>
+        <a href="#">商家入驻</a>
+        <i></i>
+        <a href="#">广告服务</a>
+        <i></i>
+        <a href="#">手机京东</a>
+        <i></i>
+        <a href="#">友情链接</a>
+        <i></i>
+        <a href="#">销售联盟</a>
+        <i></i>
+        <a href="#">京东社区</a>
+        <i></i>
+        <a href="#">京东公益</a>
+    </p>
+    <p>
+        北京市公安局朝阳分局备案编号110105014669|京ICP证070359号|互联网药品信息服务资格证编号（京）-非经营性-2011-0034<br>
+        音像制品经营许可证宿迁批005号|出版物经营许可证编号新出发（苏）批字第N-012号|互联网出版许可证编号新出网证（京）字150号<br>
+        网络文化经营许可证京网文[2011]0168-061号Copyright&copy;2004-2014京东JD.com版权所有<br>
+        京东旗下网站：English Site拍拍网 网银在线
+    </p>
+    <img src="img/footer01.jpg">
+    <img src="img/footer02.jpg">
+    <img src="img/footer03.jpg">
+    <img src="img/footer04.jpg">
+</footer>
 
 <script src="js/jquery-1.11.3.js"></script>
+<script src="layer/layer.js"></script>
+<script src="js/jquery.scrolly.min.js"></script>
+<script>
+    $(function () {
+        var $root = $('html, body');  //选择器缓存起来。这样每次点击时就不需要再重新查找了
+        $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+
+        // 滑动滚动条判断滚动距离
+        $(window).scroll(function(){
+            if($(window).scrollTop() >= 200){
+                $("#tooltip").fadeIn(1000); // 开始淡入
+            } else{
+                $("#tooltip").stop(true,true).fadeOut(1000);
+            }
+        });
+        //点击按钮返回页面顶部
+        $('.toTop').click(function () {
+            $('body,html').animate({'scrollTop':0},500);
+        });
+
+    });
+
+</script>
+<script>
+    function changeModal(value) {
+        if(value == 'asia01'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/印尼玛琅.jpg"></div><div class="content"> ' +
+                '<p>位于爪哇岛东部，离泗水约100公里。玛琅大城曾是荷兰殖民地和古马塔兰所在地。因为天气凉爽，城市规划整齐有序，周围景色缤纷多彩，所以玛琅常与欧洲城市相媲美，而Bromo-Tengger-Semeru国家公园的火山景象则与之形成一番鲜明对比。</p>' +
+                '<p>厚重的历史给玛琅留下了一大批殖民建筑、村庄、高尔夫、古庙和爪哇时代的历史遗迹，这些也给游客们留下了丰富的景点选择。喜欢慢节奏的游客可以雇辆三轮车在非游泳区海滨区域尽情地享受海风的吹拂。因为处于赛美茹(Semeru)和布罗莫(Bromo)两山之间，所以许多游客也选择玛琅作为中转站。</p></div></div>'
+            });
+        }
+        else if(value == 'asia02'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/日本那霸.jpg"></div><div class="content"> ' +
+                '<p>那霸是冲绳县的首府，位于日本最南端的一条岛链 ，距离东京两个半小时的航程。冲绳县由数百座热带和亚热带的大小岛屿组成，主岛冲绳岛也是那霸市和冲绳县的主要机场所在地。</p>' +
+                '<p>冲绳素有日本夏威夷的美称，气候温暖宜人，沙白浪缓。游人既能享受到休闲放松的气氛，也能参加跳水、潜泳和其他水上运动。冲绳的前身为琉球王国，于17世纪时被日本占领，所以冲绳的文化、习俗和语言都与日本本土相去甚远。</p>' +
+                '<p>在岛上的博物馆和和平公园内可了解二战时日本领土上的唯一一场战役——冲绳之战的渊源。对外国游客来说，那霸交通方便，可方便前往冲绳各地旅游。</p></div></div>'
+            });
+        }
+        else if(value == 'asia03'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/泰国卡农.jpg"></div><div class="content"> ' +
+                '<p>位于泰国湾西岸，洛坤府北部。卡农是泰国的一个小渔村，因其长滩、森林、红树林和纯石灰岩山丘而闻名。虽名气不及苏梅岛，但与其一衣带水，共享同一片碧海蓝天。卡农海滩宁静安详，沙滩上布满了贝壳，四周还有随风摇曳的椰树林。作为重要的生态区，卡农已被划为国家公园规划区内。该旅游区还包括了附近的岛屿和珊瑚、岩洞、瀑布与红树林。</p>' +
+                '<p>卡农相当低调，常常被前往苏梅岛、帕岸岛的旅客所忽略，但也因此保留了其原始风貌，为渴望亲近自然的游客提供了完美的去处。游客可划小舟参观附近的小岛、参加珊瑚礁潜泳、观赏海豚和鱼类、享受海鲜大餐，抑或在长长的海滩上散步。</p></div></div>'
+            });
+        }
+        else if(value == 'asia04'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/泰国碧差汶.jpg"></div><div class="content"> ' +
+                '<p>从曼谷出发，一路北行，数小时车程即可到达。碧差汶府到处可见森林、山丘、瀑布、河谷与闲适的村庄。备受保护的国家公园是各种动物以及鸟类的家园，而碧差汶城则可以见到传统泰式寺庙、集市和路边摊。</p>' +
+                '<p>在广袤的楠桡国家公园既可以攀爬高峰，体会“一览众山小”的美妙感觉，也可以自由穿梭在松林，节省体力之余同样能零距离亲近大自然。</p>' +
+                '<p>碧差汶较好地保持了原始风貌，这里田园诗般的风景让人深刻体会到返璞归真的美。食客们可以尝到罗望子果和以其果实制成的地道泰式美食卡农沁(khanom chin，一种酱汁粉)。还可以前往席贴(Si Thep)历史遗迹公园了解一下这里的过去。</p></div></div>'
+            });
+        }
+        else if(value == 'asia05'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/菲律宾大雁塔.jpg"></div><div class="content"> ' +
+                '<p>位于甲美地省高地，从首都马尼拉乘坐飞机，往北飞行一个小时即可到达。大雁塔海拔较高，是夏天最受欢迎的避暑去处之一。</p>' +
+                '<p>除了纯净的空气和起伏的丘陵，鬼斧神工的大自然还赋予了大雁塔一个塔尔湖——塔尔火山口附近的火山湖。富有冒险精神的游客可以坐三轮车、划船或骑马去游览大雁塔的湖与岛;喜欢慢节奏的朋友同样选择众多：大雁塔的历史建筑、花场、高尔夫球场和瀑布都极能让人享受到一份内心的宁静。</p></div></div>'
+            });
+        }
+        else if(value == 'asia06'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/菲律宾巴拉望.jpg"></div><div class="content"> ' +
+                '<p>位于菲律宾的西南部，距离首都马尼拉约一个小时飞行航程。巴拉望是一个典型的热带海岛，岛上有国家公园、天然港湾、洁白的海滩、石灰岩悬崖、热带雨林、珊瑚礁和星罗棋布的大小岛屿。</p>' +
+                '<p>在巴拉望，您能享受到海岛假日的精髓，再加上交通便利、价格实惠，并可参加世界一流的潜水活动，可谓物超所值。爱妮岛海洋生态保护区的礁石呈现了当地生物的多样性，而科伦附近的沉船则勾起了潜水爱好者的探险欲望。巴拉望的森林同样令人流连忘返，一泻千里的瀑布、姹紫嫣红的花海、难得一见的野生动物、壮美的风景，无不令人惊叹。</p></div></div>'
+            });
+        }
+        else if(value == 'asia07'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/越南美奈.jpg"></div><div class="content"> ' +
+                '<p>离胡志明市仅5小时车程，南靠海滨城市潘切。美奈是一个坐拥大片沙滩的宁静渔村。其边境上有着独特的地质风貌，可见识难得一见的红沙丘、白沙丘以及奇特的岩石构造。美奈的渔船富有特色，远看似一只只圆圆的篮子。</p>' +
+                '<p>越南的海滨城市都很相似，但美奈却因其交通便利、消费不高和淳朴的渔村风貌而吸引了许多游客。由于雨水天气较少却常年有风，美奈是风帆冲浪和风筝冲浪爱好者的天堂;在岸上，游客可以到人称“仙溪”的当地自然景点体验一下滑沙运动，或者骑机动踏板车在海边自由观光。</p></div></div>'
+            });
+        }
+        else if(value == 'asia08'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/asia/韩国釜山.jpg"></div><div class="content"> ' +
+                '<p>釜山位于韩国东南海岸，离首都首尔仅25分钟航程。釜山是韩国人口第二多的城市，同时也全国最大的港口城市。釜山集合了现代化滨海大城的所有优势——购物方便、夜生活繁华、当代文化繁荣以及必不可少的海滩美景。</p>' +
+                '<p>韩国釜山以两样东西闻名遐迩：海鲜和海景。海云台海滩、松亭海滩和广安里海滩是釜山最受欢迎的三大海滩，海岸线绵延数公里，每到夏天总是人满为患。岛上的金井山是徒步旅行的好去处，丛林葱茏蓊郁，放眼望去是一片辽阔。历史上新罗古国的都城庆州距离釜山一个小时的车程。此外，釜山也是一年一度的釜山国际电影节(BIFF)的举办城市，并且已申请举办2020年夏季奥运。</p></div></div>'
+            });
+        }
+        else if(value == 'america01'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/伊瓜苏国家公园.jpg"></div><div class="content"> ' +
+                '<p>伊瓜苏国家公园(Iguazu National Park)处于玄武岩地带，高80米，直径2700米，跨越阿根廷和巴西国界，世界上最壮观的瀑布之一就位于这个地区的中心。许多小瀑布成片排开，层叠而下，激起巨大的水花。周围生长着200多种维管植物的亚热带雨林，是南美洲有代表性的野生动物貘，食蚁动物，吼猴，虎猫，美洲虎和大鳄鱼的快乐家园。被誉为“南美第一奇观”的伊瓜苏瀑布是南美洲最大的瀑布，也是世界五大名瀑之一。“伊瓜苏”在当地印第安人的瓜拉尼语中意为“大水”。</p>' +
+                '<p>伊瓜苏瀑布位于阿根廷北部和巴西交界处、伊瓜苏河下游，距伊瓜苏河与巴拉那河汇流点约23公里。伊瓜苏河发源于巴西南部，沿途汇集了大溪小流，穿过维多利亚山口，以雷霆万钧之势朝巴西和阿根廷交界的平原奔腾。在伊瓜苏突然受到阿古斯丁岛的阴滞，河道为之铺宽达３公里，形成一个水深仅１米左右面的湖面，湖水流到绝壁时，飞泻成一大瀑布群。伊瓜苏瀑布呈弧形</p></div></div>'
+            });
+        }
+        else if(value == 'america02'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/圣克拉拉.jpg"></div><div class="content"> ' +
+                '<p>圣克拉拉市是维利亚克拉拉省的省会，距离首都哈瓦那300公里，位于古巴岛中部地区。它具有百年文化历史和高科技工业与文化潜力，更是古巴健康旅游的好去处。埃尔盖亚海滨浴场含有丰富的矿物质，具有医疗作用，可供健康旅游者沐浴。那里有现代化的设施和舒适的服务，其中有温泉浴、泥潭疗养浴和按摩治疗，还有减缓神经紧张的治疗和体操治疗.....。</p>' +
+                '<p>圣克拉啦城镇是沿海城镇居民为了逃避加勒比海盗的袭击于1689年在此建造的。卡伊巴里恩小渔镇的乡间小路通向一座座无人小岛，哈纳巴尼亚山的瀑布远远望去，仿佛有点象人工巧匠凿成的，在市中心广场有两座教堂和一尊圣灵受胎圣母像，堪称世界独一无二，颇受游客关注。 圣克拉拉城是西班牙创立的第8个城镇，每年在街头举行传统的著名的帕朗达节，市民倾城而出，男女老少分成两个大集团，进行歌舞对抗赛。这个节日始于 1870年，西班牙商人首创，以示古巴民族文化受到世界上不同文化的影响</p></div></div>'
+            });
+        }
+        else if(value == 'america03'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/德雷克海峡.jpg"></div><div class="content"> ' +
+                '<p>德雷克海峡(Drake Passage)位于南美洲最南端和南极洲南设得兰群岛之间，紧邻智利和阿根廷两国，是南冰洋的一部分，在巴拿马运河开凿之前，德雷克海峡是沟通太平洋和大西洋的重要海上通道之一。海峡是以发现者16世纪英国私掠船船长弗朗西斯·德雷克的名字命名，德雷斯本人最后并没有航经该海峡，而选择行经较平静的麦哲伦海峡。</p>' +
+                '<p>德雷克海峡是世界上最宽的海峡，其宽度竟达970公里，最窄处宽645公里，是南极洲与其他大陆最短的距离。同时，德雷克海峡又是世界上最深的海峡，其最大深度为5248米，如果把两座华山和一座衡山叠放到海峡中去，连山头都不会露出海面。德雷克海峡以其狂涛巨浪闻名于世——由于太平洋、大西洋在这里交汇，加之处于南半球高纬度，因此，风暴成为德雷克海峡的主宰。海峡内似乎聚集了太平洋和大西洋的所有飓风狂浪，一年365天，风力都在八级以上。即便是万吨巨轮，在波涛汹涌的海面，也被震颤得像一片树叶。</p></div></div>'
+            });
+        }
+        else if(value == 'america04'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/沃特顿冰川国际和平公园.jpg"></div><div class="content"> ' +
+                '<p>沃特顿国家公园面积526平方公里，冰河国家公园4，051平方公里，刘易斯山脉穿越其中，包括很多典型的冰川湖，高山风景琦丽，动植物资源丰富。公园内的山峰多在10000英尺以上，包括近50处冰川、许多湖泊和溪流。根据亚伯达州(加拿大西部的一个州)和蒙大拿州在1931年的提议，亚伯达州的沃特顿湖区国家公园与蒙大拿州的冰河国家公园进行合并组成了W沃特顿-冰河国际和平公园。这样做的目的不仅仅在于促进两国的友好关系，两国之间分享将会出现的收益，更是为了强调原始自然环境的国际化以及为保护这些原始自然环境进行的必要合作。</p>' +
+                '<p>动植物物种多种多样，自然繁殖了很多大的哺乳食肉动物，如狼、熊和狮子。活特顿国家公园是美国本土48个州内唯一狼、熊和狮子能自然繁衍之处。公园里野生花卉、动植物众多，有大角的山羊和秃鹫。公园已被擗为生物保护区。因它是一处地理过程的典型例证，包含了无比的自然现象，并富含大量信息与自然美景。</p></div></div>'
+            });
+        }
+        else if(value == 'america05'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/特里尼达.jpg"></div><div class="content"> ' +
+                '<p>特里尼达是哥伦布部将迪戈.贝拉斯克斯于1514年在古巴创建的第三座城镇。这座粉妆玉砌的小城，具有巴洛克式和新古典主义建筑艺术风格的神奇住宅和至今保存完好的小广场、饰有浮雕的阳台、贵重木料制成的大门，特殊红色瓦片......。更增添它原始风貌的辉煌</p>' +
+                '<p>1988年联合国教科文组织宣布古老的特里尼达为人类文化遗产。 他是经济文化富足的殖民世界的见证，这座美丽的小城以其著名的建筑为特征。</p></div></div>'
+            });
+        }
+        else if(value == 'america06'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/自由女神像.jpg"></div><div class="content"> ' +
+                '<p>自由女神像是法国在1876年赠送给美国独立100周年的礼物，坐落于美国纽约州纽约市附近的自由岛，是美国重要的观光景点。自由女神像重45万磅，高46米，底座高45米，其全称为“自由女神铜像国家纪念碑”，正式名称是“照耀世界的自由女神”。整座铜像以120钢铁为骨架，80铜片为外皮，30万只铆钉装配固定在支架上，总重量达225吨。</p>' +
+                '<p>铜像内部的钢铁支架是由建筑师约维雷勃杜克和以建造巴黎艾菲尔铁塔闻名于世的法国工程师艾菲尔设计制作的。自由女神像是美国的象征，举世闻名的自由女神像，高高地耸立在纽约港口的自由岛上，象征着美国人民争取自由的崇高理想，也象征着美国人民对美好生活的向往与追求。</p></div></div>'
+            });
+        }
+        else if(value == 'america07'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/门多萨.jpg"></div><div class="content"> ' +
+                '<p>高大的安第斯山脉阻断了太平洋湿润空气的东进，使得这个山脉东麓的城市有着干燥的气候，特别在它干热的夏季，气温常常升至35摄氏度以上；相较而言，门多萨的冬季显得温和而湿润。值得庆幸的是，由冰川融水汇流而成的门多萨河为这里提供了充足的灌溉水源。该城位于环太平洋地震带之上，活动频繁的库约断裂带穿过了整个城市，使得这个地区历史上地震频繁。</p></div></div>'
+            });
+        }
+        else if(value == 'america08'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/america/黄石国家公园.jpg"></div><div class="content"> ' +
+                '<p>黄石国家公园建立于1872年，是美国第一个国家公园和原始公园。公园位于怀俄明州西北部，因为处于一个巨大的火山盆地，黄石公园有10000个温泉点，其中有250个间歇泉，温泉的数目为世界之最。</p>' +
+                '<p>公园有五个进口，分五个区：西北的马默斯温泉区以石灰石台阶为主，故也称热台阶区；东北为罗斯福区，仍保留着老西部景观；中间为峡谷区，可观赏黄石大峡谷和瀑布；东南为黄石湖区，主要是湖光山色；西及西南为间歇喷泉区，遍布间歇喷泉、温泉、蒸气、热水潭、泥地和喷气孔。</p></div></div>'
+            });
+        }
+        else if(value == 'europe01'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/伦敦塔桥.jpg"></div><div class="content"> ' +
+                '<p>伦敦塔桥是从英国伦敦泰晤士河口算起的第一座桥(泰晤士河上共建桥15座)，也是伦敦的象征，有伦敦正门之称。</p></div></div>'
+            });
+        }
+        else if(value == 'europe02'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/克利姆林宫.jpg"></div><div class="content"> ' +
+                '<p>克利姆林宫高大坚固的围墙和钟楼、金顶的教堂、古老的楼阁和宫殿构成了一组无比美丽而雄伟的艺术建筑群。是俄罗斯国家的象征，是世界上最大的建筑群之一，是历史瑰宝、文化和艺术古迹的宝库，享有世界第八奇景的美誉。</p></div></div>'
+            });
+        }
+        else if(value == 'europe03'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/凯旋门.jpg"></div><div class="content"> ' +
+                '<p>巴黎凯旋门是欧洲100多座凯旋门中最大的一座，也是巴黎市四大代表建筑之一。这座雄伟的建筑是为纪念拿破仑1806年2月在奥斯特尔里茨战役中打败俄、奥联军而建的。</p></div></div>'
+            });
+        }
+        else if(value == 'europe04'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/卢浮宫.jpg"></div><div class="content"> ' +
+                '<p>卢浮宫 是世界上最古老、最大、最著名的博物馆。位于法国巴黎市中心的塞纳河北岸，始建于1204年，历经800多年扩建、重修达到今天的规模。</p></div></div>'
+            });
+        }
+        else if(value == 'europe05'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/埃菲尔铁塔.jpg"></div><div class="content"> ' +
+                '<p>埃菲尔铁塔 ， 铁塔设计新颖独特，是世界建筑史上的技术杰作，是法国巴黎的重要景点和突出标志。</p></div></div>'
+            });
+        }
+        else if(value == 'europe06'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/大英博物馆.jpg"></div><div class="content"> ' +
+                '<p>大英博物馆是世界上历史最悠久、规模最宏伟的综合性博物馆，也是世界上规模最大、最著名的博物馆之一。博物馆收藏了世界各地的许多文物和珍品，藏品之丰富、种类之繁多，为全世界博物馆所罕见</p></div></div>'
+            });
+        }
+        else if(value == 'europe07'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/威尼斯水城.jpg"></div><div class="content"> ' +
+                '<p>威尼斯水上城市是文艺复兴的精华，世界上唯一没有汽车的城市，上帝将眼泪流在了这里，却让它更加晶莹和柔情，就好像一个漂浮在碧波上浪漫的梦。</p></div></div>'
+            });
+        }
+        else if(value == 'europe08'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/巴黎圣母院.jpg"></div><div class="content"> ' +
+                '<p>巴黎圣母院， 一座位于法国巴黎市中心、西堤岛上的教堂建筑，也是天主教巴黎总教区的主教座堂。</p></div></div>'
+            });
+        }
+        else if(value == 'europe09'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/尼斯湖.jpg"></div><div class="content"> ' +
+                '<p>尼斯湖亦译内斯湖，位于英国苏格兰高原北部的大峡谷中，湖长39公里，宽2.4公里。面积并不大，却很深。传说这儿住着一只水怪，因此吸引了大量游客。</p></div></div>'
+            });
+        }
+        else if(value == 'europe10'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/帕特农神庙.jpg"></div><div class="content"> ' +
+                '<p>帕特农神庙 ， 在希腊首都雅典卫城坐落的古城堡中心，石灰岩的山岗上，耸峙着一座巍峨的长方形建筑物，神庙矗立在卫城的最高点，这就是在世界艺术宝库中著名的帕特农神庙。这座神庙历经两千多年的沧桑之变，如今庙顶已坍塌，雕像荡然无存，浮雕剥蚀严重，但从巍然屹立的柱廊中，还可以看出神庙当年的丰姿。</p></div></div>'
+            });
+        }
+        else if(value == 'europe11'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/普罗旺斯.jpg"></div><div class="content"> ' +
+                '<p>普罗旺斯是世界闻名的薰衣草故乡和倍受游人青睐的旅游胜地。</p></div></div>'
+            });
+        }
+        else if(value == 'europe12'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/europe/罗马竞技场.jpg"></div><div class="content"> ' +
+                '<p>意大利古罗马竞技场罗马斗兽场是古罗马帝国专供奴隶主、贵族和自由民观看斗兽或奴隶角斗的地方。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific01'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/十二使徒岩.jpg"></div><div class="content"> ' +
+                '<p>十二使徒岩位于澳大利亚维多利亚州的大洋路边上，坎贝尔港国家公园之中，屹立在海岸旁已有二千万年历史了。由几亿块小骨头聚积而渐渐形成，继而埋藏在海底，直至后来，强烈的海潮和风力终令这些岩石暴露水面，成为现时著名的十二使徒岩。因为它们的数量及形态恰巧酷似耶稣的十二使徒，人们就以圣经故事里的十二使徒为之命名。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific02'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/大堡瞧.jpg"></div><div class="content"> ' +
+                '<p>大堡礁，是世界最大最长的珊瑚礁群，位于南半球，它纵贯于澳洲的东北沿海，北从托雷斯海峡，南到南回归线以南，绵延伸展共有2011公里，最宽处161公里。有2900个大小珊瑚礁岛，自然景观非常特殊。</p>' +
+                '<p>大堡礁的南端离海岸最远有241公里，北端较靠近，最近处离海岸仅16公里。在落潮时，部分的珊瑚礁露出水面形成珊瑚岛。珊瑚千姿百态，有扇形、半球形、鞭形、鹿角形、树木和花朵状的。珊瑚栖息的水域颜色从白、青到蓝靛，绚丽多彩．珊瑚也有淡粉红、深玫瑰红、鲜黄、蓝相绿色，异常鲜艳。在礁群与海岸之间是一条极方便的交通海路。风平浪静时，游船在此间通过，船下连绵不断的多彩、多形的珊瑚景色，就成为吸引世界各地游客来猎奇观赏的最佳海底奇观。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific03'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/大洋路.jpg"></div><div class="content"> ' +
+                '<p>大洋路位于墨尔本西部，是为纪念参加第一次世界大战的士兵修建的，参与建设的人也包括许多参战老兵，共有3000余工人为此付出了艰辛的汗水。在悬崖峭壁中间开辟出来的大洋路，正式的起点是托尔坎，终点是亚伦斯福特，全长276公里，沿途奇景迭出，世界上没有第二条路可以媲美。驾车奔驰在大海洋路上，可说是一次又一次的惊奇之旅的大组合，沿途几乎不到一公里就是个绝景，耸立在海上的岩柱没有一块是相同的。夕阳斜照、群鸟飞舞，是许多人一辈子可能都见不到的美景。大洋路沿岸的壮阔波澜和笔直绝壁、是上帝的鬼斧神工，然而在十九世纪海员和移民看来，它却有如捍卫维多利亚的铁面战士，那么决绝地阻止满怀希望的船只靠近。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific04'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/悉尼大学.jpg"></div><div class="content"> ' +
+                '<p>悉尼大学始建于1850年，是坐落于澳洲金融之都悉尼市中心的一所世界顶尖历史名校，被众权威媒体誉为世界最漂亮的大学校园之一。。作为整个澳洲乃至南半球的第一所大学，悉尼大学同时也是环太平洋大学联盟、澳洲八校联盟、亚太国际贸易教育暨研究联盟的核心成员。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific05'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/悉尼歌剧院.jpg"></div><div class="content"> ' +
+                '<p>悉尼歌剧院，位于悉尼市区北部，是悉尼市地标建筑物，由丹麦建筑师约恩·伍重设计，一座贝壳形屋顶下方是结合剧院和厅室的水上综合建筑。歌剧院内部建筑结构则是仿效玛雅文化和阿兹特克神庙。悉尼歌剧院不仅是悉尼艺术文化的殿堂，更是悉尼的魂魄，清晨、黄昏或星空，不论徒步缓行或出海遨游，悉尼歌剧院随时为游客展现不同多样的迷人风采。从远处看，悉尼歌剧院就好像一艘正要起航的帆船，带着所有人的音乐梦想，驶向蔚蓝的海洋。从近处看，它就像一个陈放着贝壳的大展台，贝壳也争先恐后地向着太阳立正看起。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific06'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/牛奶湖.jpg"></div><div class="content"> ' +
+                '<p>牛奶湖是帕劳颇具特色的旅游胜地，它其实不是淡水湖，只是一个众小岛之间的小小海域，只是地形的关系，看起来像座湖。在古代，这里是火山活动频繁的区域，火山喷发后的火山灰沉积湖底，长年累月，形成厚厚一层的火山泥。由于帕劳的海水透明度极高，湖底沉淀的火山泥使海水蓝绿色中带点乳白色，加上湖底绵白的火山泥很像牛奶，所以才被称为牛奶湖。牛奶湖因其海底的白色岩浆让整个区域的海水变成很悦目的奶蓝色而得名，如果说自然形成的独特景色是它命名的原因，那么日本人对这个地区岩浆推崇便是它出名的原因。沉积湖底数万年的火山灰含有很多种天然的矿物质成分，和海水中具有杀菌作用的微生物一起，就变成了纯天然的绝佳护肤品。牛奶湖也因此成为美容圣地。</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific07'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/菲利普岛.png"></div><div class="content"> ' +
+                '<p>菲利普岛又称企鹅岛，是澳大利亚维多利亚州南部西港海湾口的一座岛屿，岛屿的东侧建有桥梁与大陆的圣雷莫相连，形状酷似海豚。岛上有企鹅生态保护区、丘吉尔农场、考拉保育中心和新诺比司中心等。早在千年之前，菲利浦岛的夏之地就已经是小企鹅的家了， 他们在沙丘中筑巢，每天早出晚归，即使伸手不见五指，千年以来他们总是循着固定的路线回到自己的洞穴。企鹅晚上回来是因为怕人为光源刺激眼睛，所以小岛这个时候实行灯光管制，沿海边只设几盏瓦数极小的白炽灯，一千多米的海边只有几盏仅能照见岸边的小灯泡。（注：由于企鹅非常胆小，“归巢”又处在傍晚时分，为了避免企鹅们受到惊吓，所有游客一律禁止拍照和摄像。）</p></div></div>'
+            });
+        }
+        else if(value == 'south_pacific08'){
+            layer.open({
+                type: 1,
+                title: '详情',
+                closeBtn: 0,
+                shadeClose: true,
+                content: '<div class="layer-content"> <div class="img"><img src="img/foreign/south_pacific/达令港.jpg"></div><div class="content"> ' +
+                '<p>达令港又译情人港。位于悉尼市中心的西北部，距中央火车站2公里并和唐人街相连。它不仅是悉尼最缤纷的旅游和购物中心，也是举行重大会议和庆典的场所。达令港内由港口码头、绿地流水和各种建筑群组成。其中有奥林匹克运动会展示中心、悉尼娱乐中心、悉尼水族馆、国家海事博物馆、悉尼会议中心、悉尼展览中心、动力博物馆、IMAX超大屏幕电影院、谊园和艺术市场、购物中心、各种游艺场、咖啡馆、酒吧、饭店等等。达令港内棕榈婆娑、绿草如茵、游人如织，更有来自全世界各国的街头艺人在此尽显缤纷。有一个小插曲，这里曾是众多中国旅澳画家为游人速写卖画的重地。几十位在中国颇有名气的画家，一字排开为游人画像，构成了一道独特的风景一。当然，如今这些画家的作品大多已打入澳大利亚主流画坛，他们将永远记住在达令港的尴尬和艰苦的岁月。</p></div></div>'
+            });
+        }
+    }
+</script>
 </body>
 </html>
