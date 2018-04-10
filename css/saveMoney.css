@@ -153,3 +153,32 @@ li.about:hover #about{
 #user-prefs>p{
     color: #669D53;
 }
+
+
+/*穷游*/
+
+
+
+
+
+
+
+
+
+
+/*页面底部-备案号等*/
+#footer{
+    text-align:center;
+    padding-top: 30px;
+    font-family: SimHei;
+}
+#footer i{
+    border-left:1px solid #CABBA9;
+    margin:8px;
+}
+#footer img{
+    margin:20px;
+}
+#footer-box a,#footer a{
+    color: #000000;
+}

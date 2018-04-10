@@ -723,24 +723,25 @@ div.floor header ul.waterfall_list li a:hover{
 #more li{
     float: left;
     padding-left: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
 }
 #footer-box>h3{
     margin:10px 0 6px 0;
 }
 #more div.half-mask{
     background-color: rgba(0,0,0,0.2);
-    width:16%;
-    height:18%;
+    width:100%;
+    height:100%;
     position: absolute;
-    top:52%;
+    top:71%;
     transition: top 1s;
     color: #fff;
-    overflow: hidden;
-    margin-bottom:20px;
 }
-#more div.half-mask:hover{
-    top:0;
-    height:75%;
+#more li:hover div.half-mask{
+    top: 0;
+    height: 100%;
 }
 #more div.half-mask p>a{
     color: #e4393c;
@@ -757,21 +758,22 @@ div.floor header ul.waterfall_list li a:hover{
 #most li{
     float: left;
     padding-left: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
 }
 #most div.half-mask{
     background-color: rgba(0,0,0,0.2);
-    width:16%;
-    height:18%;
+    width:100%;
+    height:100%;
     position: absolute;
-    top:52%;
+    top:71%;
     transition: top 1s;
     color: #fff;
-    overflow: hidden;
-    margin-bottom:20px;
 }
-#most div.half-mask:hover{
-    top:0;
-    height:75%;
+#most li:hover div.half-mask{
+    top: 0;
+    height: 100%;
 }
 #most div.half-mask p>a{
     color: #e4393c;
