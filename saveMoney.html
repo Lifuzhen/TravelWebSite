@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>穷游</title>
     <link rel="stylesheet" href="css/saveMoney.css">
+    <script src="js/echarts.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -64,11 +65,12 @@
 </div>
 
 <div class="saveMoney">
-    <!--古镇-->
-    <div></div>
-    <!--公园-->
-    <!--科技馆-->
-    <!--标志性建筑-->
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div style="height: 420px">
+        <div id="main" style="width: 600px;height:400px;right: 330px;top: 20px"></div>
+        <div id="right" style="width: 600px;height:400px;bottom: 380px;left:705px"></div>
+    </div>
+
 </div>
 
 
@@ -108,5 +110,289 @@
 </footer>
 
 <script src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    var right = echarts.init(document.getElementById('right'));
+    // 指定图表的配置项和数据
+    option = {
+        backgroundColor: '#fff',
+        title: {
+            text: '免费景点各个时间段的人流量',
+            textStyle: {
+                fontWeight: 'normal',
+                fontSize: 16,
+                color: '#000'
+            },
+            left: '30%'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            }
+        },
+        legend: {
+            icon: 'rect',
+            itemWidth: 14,
+            itemHeight: 5,
+            itemGap: 13,
+            data: ['古镇', '公园', '科技馆'],
+            right: '4%',
+            textStyle: {
+                fontSize: 12,
+                color: '#000'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [{
+            type: 'category',
+            boundaryGap: false,
+            axisLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            },
+            data: ['8:00', '9:05', '10:10', '11:15', '12:20', '13:25', '14:30', '15:35', '16:40', '17:45', '18:50', '19:55']
+        }, {
+            axisPointer: {
+                show: false
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            },
+            axisTick: {
+                show: false
+            },
+
+            position: 'bottom',
+            offset: 20,
+        }],
+        yAxis: [{
+            type: 'value',
+            name: '单位（%）',
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            },
+            axisLabel: {
+                margin: 10,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            }
+        }],
+        series: [{
+            name: '古镇',
+            type: 'line',
+            smooth: true,
+            symbol: 'circle',
+            symbolSize: 5,
+            showSymbol: false,
+            lineStyle: {
+                normal: {
+                    width: 1
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(137, 189, 27, 0.3)'
+                    }, {
+                        offset: 0.8,
+                        color: 'rgba(137, 189, 27, 0)'
+                    }], false),
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgb(137,189,27)',
+                    borderColor: 'rgba(137,189,2,0.27)',
+                    borderWidth: 12
+
+                }
+            },
+            data: [220, 182, 191, 134, 150, 120, 110, 125, 145, 122, 165, 100]
+        }, {
+            name: '公园',
+            type: 'line',
+            smooth: true,
+            symbol: 'circle',
+            symbolSize: 5,
+            showSymbol: false,
+            lineStyle: {
+                normal: {
+                    width: 1
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(0, 136, 212, 0.3)'
+                    }, {
+                        offset: 0.8,
+                        color: 'rgba(0, 136, 212, 0)'
+                    }], false),
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgb(0,136,212)',
+                    borderColor: 'rgba(0,136,212,0.2)',
+                    borderWidth: 12
+
+                }
+            },
+            data: [120, 110, 125, 145, 122, 165, 122, 220, 182, 191, 134, 80]
+        }, {
+            name: '科技馆',
+            type: 'line',
+            smooth: true,
+            symbol: 'circle',
+            symbolSize: 5,
+            showSymbol: false,
+            lineStyle: {
+                normal: {
+                    width: 1
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(219, 50, 51, 0.3)'
+                    }, {
+                        offset: 0.8,
+                        color: 'rgba(219, 50, 51, 0)'
+                    }], false),
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            itemStyle: {
+                normal: {
+
+                    color: 'rgb(219,50,51)',
+                    borderColor: 'rgba(219,50,51,0.2)',
+                    borderWidth: 12
+                }
+            },
+            data: [220, 182, 125, 145, 122, 191, 134, 150, 120, 110, 165, 70]
+        }, ]
+    };
+    rightOption = {
+        backgroundColor: '#fff',
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)",
+
+        },
+        legend: {
+            orient: "vertical",
+            x: "right",
+            itemWidth: 14,
+            itemHeight: 14,
+            align: "left",
+            data:['古镇','公园','科技馆','标志性建筑物','江','河','湖'],
+        },
+        series: [
+            {
+                name:'访问来源',
+                type:'pie',
+                hoverAnimation: false,
+                legendHoverLink:false,
+                radius: ['40%', '42%'],
+                color: ['#915872', '#3077b7', '#9a8169', '#3f8797','#5b8144','#307889','#9c6a79'
+                ],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show:false,
+                        formatter: "{b}\n{d}%"
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    },
+
+                },
+                tooltip: {
+                    show:false,
+                },
+
+                data:[
+                    {value:435, name:''},
+                    {value:679, name:''},
+                    {value:848, name:''},
+                    {value:348, name:''},
+                    {value:679, name:''},
+                    {value:848, name:''},
+                    {value:348, name:''}
+                ]
+            },
+            {
+                name:'访问来源',
+                type:'pie',
+                radius: ['42%', '55%'],
+                color: ['#d74e67', '#0092ff', '#eba954', '#21b6b9','#60a900','#01949b',' #f17677'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        formatter: "{b}\n{d}%"
+                    },
+                    emphasis: {
+                        show: true,
+                        position: 'center',
+                        textStyle: {
+                            fontSize: '16',
+                            fontWeight: 'bold'
+                        },
+                        normal: {
+                            formatter: '{b}\n{d}%'
+                        },
+                    }
+                },
+                data:[
+                    {value:435, name:'古镇'},
+                    {value:679, name:'公园'},
+                    {value:848, name:'科技馆'},
+                    {value:348, name:'标志性建筑物'},
+                    {value:679, name:'江'},
+                    {value:848, name:'河'},
+                    {value:348, name:'湖'}
+
+                ]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    right.setOption(rightOption);
+</script>
 </body>
 </html>
